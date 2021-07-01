@@ -1,4 +1,4 @@
-package com.geekbrains.tests.espresso
+package com.myApp.tests.espresso
 
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
@@ -6,9 +6,9 @@ import androidx.test.espresso.action.ViewActions.*
 import androidx.test.espresso.contrib.RecyclerViewActions
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.geekbrains.tests.R
-import com.geekbrains.tests.view.search.MainActivity
-import com.geekbrains.tests.view.search.SearchResultAdapter.SearchResultViewHolder
+import com.myApp.tests.R
+import com.myApp.tests.view.search.MainActivity
+import com.myApp.tests.view.search.SearchResultAdapter.SearchResultViewHolder
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
