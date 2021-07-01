@@ -1,4 +1,4 @@
-package com.geekbrains.tests.espresso
+package com.myApp.tests.espresso
 
 import android.content.Context
 import android.view.View
@@ -15,12 +15,12 @@ import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.geekbrains.tests.*
-import com.geekbrains.tests.NUMBER_OF_RESULTS_MINUS_1
-import com.geekbrains.tests.NUMBER_OF_RESULTS_PLUS_1
-import com.geekbrains.tests.NUMBER_OF_RESULTS_ZERO
-import com.geekbrains.tests.view.details.DetailsActivity
-import com.geekbrains.tests.view.details.DetailsFragment
+import com.myApp.tests.*
+import com.myApp.tests.NUMBER_OF_RESULTS_MINUS_1
+import com.myApp.tests.NUMBER_OF_RESULTS_PLUS_1
+import com.myApp.tests.NUMBER_OF_RESULTS_ZERO
+import com.myApp.tests.view.details.DetailsActivity
+import com.myApp.tests.view.details.DetailsFragment
 import junit.framework.TestCase
 import org.junit.Before
 import org.junit.Test

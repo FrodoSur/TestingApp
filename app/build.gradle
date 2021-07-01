@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -29,6 +30,33 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+
+    flavorDimensions 'version'
+    productFlavors {
+        forUsage {
+            applicationIdSuffix ".forUsage"
+            versionNameSuffix ".forUsage"
+        }
+        forTesting {
+            applicationIdSuffix ".forTesting"
+            versionNameSuffix ".forTesting"
+        }
+    }
+
+    sourceSets {
+        androidTest {
+            java.srcDirs += "src/sharedTestData/java"
+        }
+        test {
+            java.srcDirs += "src/sharedTestData/java"
+        }
+    }
+
 }
 
 dependencies {
