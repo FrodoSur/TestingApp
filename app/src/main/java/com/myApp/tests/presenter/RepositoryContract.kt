@@ -1,10 +1,15 @@
 package com.myApp.tests.presenter
 
+import com.myApp.tests.model.SearchResponse
 import com.myApp.tests.repository.RepositoryCallback
 
-internal interface RepositoryContract {
+interface RepositoryContract {
     fun searchGithub(
         query: String,
         callback: RepositoryCallback
     )
+
+    suspend fun searchGithubAsync(
+        query: String
+    ): SearchResponse
 }
